@@ -19,3 +19,7 @@ lightbox.addEventListener("click", (e) => {
     lightbox.style.display = "none";
   }
 });
+// 右クリック・長押しメニューを無効化
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
