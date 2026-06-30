@@ -19,7 +19,10 @@ lightbox.addEventListener("click", (e) => {
     lightbox.style.display = "none";
   }
 });
-// 右クリック・長押しメニューを無効化
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
+
+// 画像の右クリック・長押しメニューを無効化
+document.querySelectorAll("img").forEach(img => {
+  img.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+  });
 });
