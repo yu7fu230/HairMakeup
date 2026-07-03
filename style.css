@@ -131,6 +131,17 @@ img {
     display: none;
 }
 
+.about {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .career {
     display: grid;
     grid-template-columns: 90px auto;
