@@ -125,3 +125,7 @@ img {
     line-height: 2.2;
     color: #666;
 }
+
+    text-align: left;   /* 左揃え */
+    display: inline-block;
+}
