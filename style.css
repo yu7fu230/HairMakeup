@@ -120,6 +120,8 @@ img {
 }
 
 .about p {
+    color: red !important;
+}
     width: fit-content;
     margin: 0 auto;
     text-align: left;
