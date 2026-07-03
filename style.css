@@ -77,10 +77,7 @@ footer a {
   font-size:40px;
   cursor:pointer;
 }
-img {
-  -webkit-user-drag: none;
-  user-select: none;
-}
+
 
 @media (max-width: 768px) {
     header h1 {
@@ -120,14 +117,14 @@ img {
 }
 
 .about p {
-    color: red !important;
-}
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 2.2;
+    color: #666;
+
     width: fit-content;
     margin: 0 auto;
     text-align: left;
-
-    text-align: left;   /* 左揃え */
-    display: inline-block;
 }
 
 .hidden {
