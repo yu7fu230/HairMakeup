@@ -103,3 +103,25 @@ img {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
 }
+
+.about {
+    max-width: 650px;
+    margin: 120px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.about p {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    line-height: 2.2;
+    color: #666;
+}
