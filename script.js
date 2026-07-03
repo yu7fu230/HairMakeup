@@ -21,32 +21,26 @@ lightbox.addEventListener("click", (e) => {
 });
 
 // 画像の右クリック・長押しメニューを無効化
-document.querySelectorAll("img").forEach(img => {
-  img.addEventListener("contextmenu", function(e) {
+document.querySelectorAll("img").forEach((img) => {
+  img.addEventListener("contextmenu", function (e) {
     e.preventDefault();
   });
 });
+
 // About 開閉
 const toggle = document.getElementById("about-toggle");
 const about = document.getElementById("about");
 
-toggle.addEventListener("click", function(e) {
+toggle.addEventListener("click", function (e) {
   e.preventDefault();
 
   if (about.classList.contains("hidden")) {
     about.classList.remove("hidden");
-    setTimeout(() => {
-    about.classList.add("show");
-}, 10);
     about.scrollIntoView({
-      behavior: "smooth"
+      behavior: "smooth",
+      block: "start"
     });
-   } else {
-    about.classList.remove("show");
-
-    setTimeout(() => {
-        about.classList.add("hidden");
-    }, 500);
-}
+  } else {
+    about.classList.add("hidden");
   }
 });
