@@ -26,3 +26,19 @@ document.querySelectorAll("img").forEach(img => {
     e.preventDefault();
   });
 });
+// About 開閉
+const toggle = document.getElementById("about-toggle");
+const about = document.getElementById("about");
+
+toggle.addEventListener("click", function(e) {
+  e.preventDefault();
+
+  if (about.classList.contains("hidden")) {
+    about.classList.remove("hidden");
+    about.scrollIntoView({
+      behavior: "smooth"
+    });
+  } else {
+    about.classList.add("hidden");
+  }
+});
