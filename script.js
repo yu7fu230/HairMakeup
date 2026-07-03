@@ -35,10 +35,18 @@ toggle.addEventListener("click", function(e) {
 
   if (about.classList.contains("hidden")) {
     about.classList.remove("hidden");
+    setTimeout(() => {
+    about.classList.add("show");
+}, 10);
     about.scrollIntoView({
       behavior: "smooth"
     });
-  } else {
-    about.classList.add("hidden");
+   } else {
+    about.classList.remove("show");
+
+    setTimeout(() => {
+        about.classList.add("hidden");
+    }, 500);
+}
   }
 });
