@@ -134,8 +134,8 @@ img {
 
 .career {
     display: grid;
-    grid-template-columns: 80px auto;
-    gap: 8px 20px;
+    grid-template-columns: 65px auto;
+    gap: 8px 12px;
     width: fit-content;
     margin: 0 auto;
     font-family: "Manrope", sans-serif;
