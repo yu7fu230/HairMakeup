@@ -144,3 +144,12 @@ img {
     color: #666;
     text-align: left;
 }
+
+@media (max-width: 768px) {
+  .career {
+    grid-template-columns: 58px auto;
+    column-gap: 8px;
+    font-size: 13px;
+    line-height: 1.9;
+  }
+}
